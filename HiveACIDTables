@@ -1,0 +1,18 @@
+
+// hive.support.concurrency = true
+// hive.enforce.bucketing = true
+// hive.exec.dynamic.partition.mode = nonstrict
+// hive.txn.manager = org.apache.hadoop.hive.ql.lockmgr.DbTxnManager
+// hive.compactor.initiator.on = true
+// hive.compactor.worker.threads = 1
+
+/* Internal and not supported for External */
+
+create table simple(
+id Int,
+name String,
+ph String,
+year Int)
+clustered by (year) into 3 buckets
+stored as orc
+TBLPROPERTIES ('transactional'='true');
