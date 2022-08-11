@@ -26,3 +26,4 @@ problems&amp;Solutions
 17) SELECT * FROM doesnt invoke MapRed.
 18) Hive.execution.engine = mr / tez
 19) TEZ performs faster bcoz it doesnt put the intermediate results from mapper to hdfs 
+20) SPARK beats TEZ and MR
