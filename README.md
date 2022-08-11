@@ -10,7 +10,7 @@ problems&amp;Solutions
 6) When there is data type mismatch, HIVE tries to CAST. Col INT but inserted value is STRING. It ends up as NULL. This particular record.
 7) Multiple ISNERT INTO add duplicate records/ data but, INSERT OVERWRITE INTO deletes all the data and rewrites data.
 8) You can also CREATE VIEW. VIEWS can be dropped using DROP VIEW. VIEW doesnot create a directory in HDFS.
-9) Execute .sql or .hql files in HIVE shell. HIVE -E filename (file.hql or file.sql)
+9) Execute .sql or .hql files in HIVE shell. HIVE -f  filename (file.hql or file.sql)
 10) HIVE has METASTORE also known as HCATALOG . Dfeault embedded METASTORE DERBY. But each cluster node has local reference hostname. So, always configure it to MySQL which is the remote METASTORE. Its centralized. It has all the table info in TBL after getting into DATABASES. Change this setting in hive-site.xml
 11) HIVE supports most of the SQL data-types. It also has ARRAY<>, MAP<int,string>, STRUCT<name: string, age: int>
 12) HIVE supports only equijoins (ON Operator always should have EQUALITY). INNER, LEFT OUTER etc.
