@@ -21,4 +21,5 @@ problems&amp;Solutions
 17) INSERT OVERWRITE DIRECTORY /path/"
     SELECT * FROM will send your queried data to this path as file.
 14) SELECT * FROM DISTRIBUTE BY col1 ORDER BY col2, col3 will PARTITION your data on the file and writes the data as per the number of partitions.
-15) TBLPROPERTIES = SkipHeadlinecount and ESCAPEQUOTES.
+15) Query result from PARTITIONED table is faster. Non PARITIONED table will invoke MAPRED job everytime you write a query on it with a filter 'WHERE'.
+16) TBLPROPERTIES = SkipHeadlinecount and ESCAPEQUOTES.
