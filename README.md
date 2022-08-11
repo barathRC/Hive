@@ -25,3 +25,4 @@ problems&amp;Solutions
 16) TBLPROPERTIES = SkipHeadlinecount and ESCAPEQUOTES.
 17) SELECT * FROM doesnt invoke MapRed.
 18) Hive.execution.engine = mr / tez
+19) TEZ performs faster bcoz it doesnt put the intermediate results from mapper to hdfs 
