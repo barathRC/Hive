@@ -5,7 +5,7 @@ problems&amp;Solutions
 1) You can create table using CREATE TABLE (Managed) & CREATE EXTERNAL TABLE (External) 
 2) LOCATION specified should be an HDFS path "" to override the default LOCATION which is usr/hive/warehouse/tblname
 3) HDFS DFS -push (or) copy fromfile file.txt "/path/" to copy file to the HIVE table directory path (HDFS path)
-4) LOAD DATA LOCAL INPATH INTO tablename to copy file from local
+4) LOAD DATA LOCAL INPATH "/PATH/" INTO tablename to copy file from local
 5) LOAD DATA INPATH "/path1/" INTO "/path2/" moves the file from one HDFS location to another
 6) HIVE has METASTORE also known as HCATALOG . Dfeault embedded METASTORE DERBY. But each cluster node has local reference hostname. So, always configure it to MySQL which is the remote METASTORE. Its centralized. It has all the table info in TBL after getting into DATABASES. Change this setting in hive-site.xml
 7) HIVE supports most of the SQL data-types. It also has ARRAY<>, MAP<int,string>, STRUCT<name: string, age: int>
