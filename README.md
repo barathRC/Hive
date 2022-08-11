@@ -23,3 +23,5 @@ problems&amp;Solutions
 14) SELECT * FROM DISTRIBUTE BY col1 ORDER BY col2, col3 will PARTITION your data on the file and writes the data as per the number of partitions.
 15) Query result from PARTITIONED table is faster. Non PARITIONED table will invoke MAPRED job everytime you write a query on it with a filter 'WHERE'.
 16) TBLPROPERTIES = SkipHeadlinecount and ESCAPEQUOTES.
+17) SELECT * FROM doesnt invoke MapRed.
+18) Hive.execution.engine = mr / tez
