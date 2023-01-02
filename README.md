@@ -29,3 +29,10 @@ problems&amp;Solutions
 18) Hive.execution.engine = mr / tez
 19) TEZ performs faster bcoz it doesnt put the intermediate results from mapper to hdfs 
 20) SPARK beats TEZ and MR
+21) By using the below commands, we can access subdirectories recursively in Hive:
+
+hive> Set mapred.input.dir.recursive=true;
+hive> Set hive.mapred.supports.subdirectories=true;
+Hive tables can be pointed to the higher level directory, and this is suitable for the directory structure like:
+
+/data/country/state/city/
