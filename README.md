@@ -3,7 +3,7 @@ problems&amp;Solutions
 
 
 1) You can create table using CREATE TABLE (Managed) & CREATE EXTERNAL TABLE (External) 
-2) LOCATION specified should be an HDFS path "" to override the default LOCATION which is usr/hive/warehouse/tblname
+2) LOCATION specified for an ext. table should be an HDFS path "" to override the default LOCATION which is usr/hive/warehouse/tblname
 3) HDFS DFS -push (or) copy fromfile file.txt "/path/" to copy file to the HIVE table directory path (HDFS path)
 4) LOAD DATA LOCAL INPATH "/PATH/" INTO tablename to copy file from local.It doesnot remove the existing data present in local and rather copies file.
 5) This data is copied to '/user/hive/warehouse/tablename'
