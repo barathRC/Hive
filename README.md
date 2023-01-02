@@ -36,3 +36,5 @@ hive> Set hive.mapred.supports.subdirectories=true;
 Hive tables can be pointed to the higher level directory, and this is suitable for the directory structure like:
 
 /data/country/state/city/
+
+22) The hive.fetch.task.conversion property of Hive lowers the latency of MapReduce overhead, and in effect when executing queries such as SELECT, FILTER, LIMIT, etc. it skips the MapReduce function.
