@@ -37,4 +37,4 @@ Hive tables can be pointed to the higher level directory, and this is suitable f
 
 /data/country/state/city/
 
-22) The hive.fetch.task.conversion property of Hive lowers the latency of MapReduce overhead, and in effect when executing queries such as SELECT, FILTER, LIMIT, etc. it skips the MapReduce function.
+28) The hive.fetch.task.conversion property of Hive lowers the latency of MapReduce overhead, and in effect when executing queries such as SELECT, FILTER, LIMIT, etc. it skips the MapReduce function.
